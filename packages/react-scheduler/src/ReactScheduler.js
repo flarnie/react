@@ -17,7 +17,13 @@
  * - Initial test coverage
  * - Support for multiple callbacks
  * - Support for two priorities; serial and deferred
- * - Better test coverage
+ * - Reusable mocking solution, so that we don't have duplicate manual mocking
+ *   in the following tests;
+ *   - ReactDOMRoot-test.js
+ *   - ReactDOMFiberAsync-test.internal.js
+ *   - ChangeEventPlugin-test.internal.js
+ *   - SimpleEventPlugin-test.internal.js
+ * - Better test coverage, in general, to cover new functionality
  * - Better docblock
  * - Polish documentation, API
  */

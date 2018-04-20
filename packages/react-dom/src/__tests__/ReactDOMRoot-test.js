@@ -60,6 +60,19 @@ describe('ReactDOMRoot', () => {
       now += ms;
     };
 
+    jest.mock('react-scheduler', () => {
+      return {
+        now() {
+          return now;
+        },
+        rIC(cb) {
+          scheduledCallback = cb;
+        },
+        cIC() {
+          scheduledCallback = null;
+        },
+      };
+    });
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');

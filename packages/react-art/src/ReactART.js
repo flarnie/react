@@ -468,7 +468,7 @@ const ARTRenderer = ReactFiberReconciler({
     return emptyObject;
   },
 
-  scheduleDeferredCallback: ReactScheduler.rIC,
+  scheduleDeferredCallback: ReactScheduler.scheduleCallback,
 
   shouldSetTextContent(type, props) {
     return (

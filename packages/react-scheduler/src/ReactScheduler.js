@@ -48,8 +48,6 @@ import ExecutionEnvironment from 'fbjs/lib/ExecutionEnvironment';
 // this module is initially evaluated.
 // We want to be using a consistent implementation.
 const localDate = Date;
-const localSetTimeout = setTimeout;
-const localClearTimeout = clearTimeout;
 
 const hasNativePerformanceNow =
   typeof performance === 'object' && typeof performance.now === 'function';
